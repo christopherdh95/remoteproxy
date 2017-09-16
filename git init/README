@@ -1,0 +1,8 @@
+public class RemoteProxyUplink extends Thread { 
+6	
+7		private final RemoteSocketConnection remoteConnection;
+8	
+9		RemoteProxyUplink(RemoteSocketConnection remoteConnection) {
+…	
+56						//System.out.println("Connection Closed by FIN or RST");
+57						Constants.connectionMap.remove(remoteConnection.getTcpConnectionID());
